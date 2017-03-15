@@ -1,0 +1,19 @@
+<dl class="hot_news" ng-controller="hotNewsController" ng-show="hotNewsService.length">
+    <dt>
+        <h4>新闻动态</h4>
+        <a href="javascript:void(0)" class="refresh" ng-click="refresh()"><img src="../skin/default/images/icon/icon_refresh.png" /><i>刷新</i></a>
+    </dt>
+    <dd>
+        <a ng-repeat="hotNew in hotNewsService" href="#/hotNew/{{hotNew.id}}" ng-if="$first">
+            <img ng-src="{{hotNew.imgUrl}}"/>
+            <h6 ng-bind="hotNew.title"></h6>
+        </a>
+        <a ng-repeat="hotNew in hotNewsService" href="#/hotNew/{{hotNew.id}}" ng-if="$index > 0 && $index < 4">
+            <h6 ng-bind="hotNew.title"></h6>
+            <p ng-bind="hotNew.date"></p>
+            <em>
+                <img ng-src="{{hotNew.imgUrl}}"/>
+            </em>
+        </a>
+    </dd>
+</dl>

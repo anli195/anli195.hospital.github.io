@@ -1,0 +1,1326 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+ * @description : css reset
+ * @author   : anli(安立)
+ * @date     : 2017-02-08
+ * PC端基础样式
+ */
+/*
+.loading {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+    z-index:99999;
+    background: #f0f0f0;
+    text-align: center;
+    display: none;
+}
+
+.loading p {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin: -20px 0 0 -20px;
+}
+.loading p img {
+    height:40px ;
+}
+*/
+
+/*
+ * 外部容器_Whole_@Start
+ */
+.whole {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1;
+    max-width: 720px;
+    min-width: 320px;
+    min-height: 640px;
+    /*background: url("../images/icon/body_bg.png");*/
+}
+/*
+ * 页面头部_Header_@Start
+ */
+.header {
+    background: #18b4ed;
+    position: relative;
+    display: none;
+}
+.header h1 {
+    line-height: 50px;
+    padding: 0 50px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    -webkit-text-shadow: 1px 1px #333;
+    text-shadow: 1px 1px #333;
+}
+.header .icon {
+    width: 32px;
+    display: block;
+    position: absolute;
+    top:15px;
+    left:10px;
+}
+.header .icon img {
+    width: 100%;
+}
+
+.main {
+    padding: 10px;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+/*
+ * 主页菜单_Menu_@Start
+ */
+.menu {
+    display: table;
+    width: 100%;
+}
+.menu ul {
+    display: table-row;
+}
+.menu ul li {
+    display: table-cell;
+    width: 25%;
+}
+.menu ul li a {
+    display: block;
+    text-align: center;
+}
+.menu ul li a span {
+    display: block;
+    padding: 10px 10px 0;
+}
+.menu ul li a h4 {
+    display: block;
+    font-size: 0.875em;
+    padding: 5px 0;
+    text-align: center;
+}
+.menu ul li a span img {width: 100%;}
+
+
+/*
+ * 热门新闻_Hot_news_@Start
+ */
+.hot_news {
+    border: 1px solid #d4d4d4;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.hot_news dt {
+    height: 20px;
+    padding:10px;
+    overflow: hidden;
+    background: #fff;
+}
+.hot_news dt h4 {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+.hot_news dt a {
+    height: 16px;
+    line-height: 16px;
+    padding: 2px;
+    float: right;
+    overflow: hidden;
+}
+.hot_news dt a img {width:16px;float: left}
+.hot_news dt a i {
+    float: right;
+    height: 16px;
+    padding-left: 5px;
+    font-size: 0.875em;
+    overflow: hidden;
+}
+.hot_news dt a.curr {
+    color: #999;
+}
+.hot_news dt a.curr img {
+    transform:rotate(1800deg);
+    -webkit-transform:rotate(1800deg); /* Safari 和 Chrome */
+    -o-transform:rotate(1800deg); 	/* Opera */
+    transition:all 2s ease-in-out;
+    -webkit-transition:all 2s ease-in-out;
+    -o-transition:all 2s ease-in-out;
+}
+
+.hot_news dd {
+    overflow: hidden;
+}
+.hot_news dd a {
+    display: block;
+    padding: 10px 120px 10px 10px;
+    border-top:1px solid #d4d4d4;
+    position: relative;
+}
+.hot_news dd a h6 {
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 1em;
+}
+.hot_news dd a p {
+    height: 24px;
+    line-height: 24px;
+    font-size: 0.875em;
+    color: #bcbcbc;
+}
+
+.hot_news dd a em {
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    bottom: 10px;
+}
+.hot_news dd a em img {width: 100%;height: 100%;}
+
+.hot_news dd a:first-child {
+    padding: 0px;
+}
+.hot_news dd a:first-child img {
+    width: 100%;
+    max-height: 180px;
+}
+.hot_news dd a:first-child h6 {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    -webkit-text-shadow: 1px 1px 0px #000;
+    text-shadow: 1px 1px 0px #000;
+    overflow: hidden;
+    color: #fff;
+    background:url(../images/banner/bg_caption.png);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.download {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*
+ * 个人中心_personal_@Start
+ */
+.personal {
+    position: absolute;
+    top:50px;
+    width: 100%;
+    bottom: 0;
+    background: #494b59;
+}
+.personal a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px #333;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #62657a;
+}
+.personal a i {
+    float: left;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-right: 10px;
+}
+/*
+ * 添加就诊人_add_per_@End
+ */
+
+.record_list {
+    background: #f1f1f1;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+}
+.record_list a {
+    display:block;
+    padding:5px 10px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #dcdcdc;
+}
+.record_list a p {
+    height: 32px;
+    padding: 0 10px 0 80px;
+    position: relative;
+}
+.record_list a p label {
+    display: block;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+.record_list a p span {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+.record_list a p span i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: red;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.patient_list {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.patient_list p {
+    border-bottom: 1px solid #f6f6f6;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+.patient_list p a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 5px 10px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #dcdcdc;
+}
+.patient_list p a:last-child {
+    border-bottom: none;
+}
+/*
+ * 医院动态_News_lsit_@Start
+ */
+.news_list {
+    border-bottom: 1px solid #f6f6f6;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+.news_list a {
+    display: block;
+    height: 72px;
+    padding:10px 10px 10px 120px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+    position: relative;
+}
+.news_list a em {
+    display: block;
+    width: 100px;
+    height: 72px;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.news_list a em img {
+    width: 100%;
+    height: 72px;
+}
+.news_list a h6 {
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 1em;
+}
+.news_list a p {
+    height: 24px;
+    line-height: 24px;
+    font-size: 0.875em;
+    color: #999;
+}
+
+/*
+ * 医院动态详情_Details_@Start
+ */
+.details {
+    padding: 10px;
+    overflow: hidden;
+}
+.details_title {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.details_title h4 {
+    line-height: 24px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.details_title em {
+    display: block;
+    color: #999;
+}
+.details_cont {
+
+    overflow: hidden;
+}
+.details_cont img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.details_cont p {
+    text-indent: 2em;
+    line-height: 24px;
+}
+/*
+ * 图片放大_Img_zoom_@Start
+ */
+.img_zoom {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.img_zoom ul {
+    display: table-row;
+}
+.img_zoom ul li {
+    display: table-cell;
+    vertical-align: middle;
+}
+.img_zoom ul li img {
+    width: 100%;
+}
+/*
+ * 医院简介_Hospital_@Start
+ */
+.hospital {
+    overflow: hidden;
+}
+.hospital h4 {
+    line-height: 24px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #6f78b2;
+    border-bottom: 1px solid #c2c2c2;
+}
+.hospital h4:first-child {
+    border-bottom: none;
+}
+.hospital h4 img {
+    height: 24px;
+}
+.count {
+    display: table;
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+}
+.count ul {
+    display: table-row;
+}
+.count ul li {
+    display: table-cell;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    color: #999;
+    border:1px solid #ccc;
+}
+.count ul li:first-child {
+    color: #333;
+    width: 100px;
+}
+/*
+ * 特色技术_Features_@Start
+ */
+.features {
+    background: #f1f1f1;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+}
+.features a {
+    display: block;
+    height: 48px;
+    padding:10px 10px 10px 92px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+    position: relative;
+}
+.features a em {
+    display: block;
+    width: 72px;
+    height: 48px;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.features a em img {
+    width: 100%;
+    height: 48px;
+}
+.features a h6 {
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 1em;
+}
+/*
+ * 科室查询_search_@Start
+ */
+
+.search {
+    overflow: hidden;
+}
+.search_text {
+    display: block;
+    padding: 0 40px 0 32px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+.search_text i {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top:11px;
+    left: 10px;
+    z-index:9;
+}
+.search_text i img {
+    width:18px;
+}
+.search_text input[type='text'] {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    line-height: normal;
+    border: none;
+}
+.search_text a.clear_cont {
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 0.875em;
+    border: 1px solid #ccc;
+    color: #fff;
+    background: #bbb;
+    border-radius:8px;
+    text-align: center;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    z-index:9;
+    display: none;
+}
+.search span a.search_btn {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #73b52d;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+    position: absolute;
+    top:0px;
+    right:0px;
+    z-index:9;
+}
+.search_list {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    display: none;
+}
+.search_list p {
+    overflow: hidden;
+}
+.search_list p a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+.search_list p a:last-child {border: none}
+
+
+.department {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+.department_title {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.department_title ul {
+    display: table-row;
+}
+.department_title ul li {
+    width: 33.3%;
+    display: table-cell;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    cursor: pointer;
+}
+.department_title ul li.curr {
+    color: #fff;
+    background: #2c98e3;
+}
+.department_title ul li:last-child {border: none;}
+
+.department_cont {
+    overflow: hidden;
+}
+.department_cont p {
+    display: none;
+}
+.department_cont p:first-child {
+    display: block;
+}
+.department_cont p a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+.department_cont p a:last-child {border: none;}
+/*
+ * 科室介绍_department_intro_@Start
+ */
+.department_details {
+    background: #fff;
+    overflow: hidden;
+}
+.department_details h4 {
+    line-height: 24px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #6f78b2;
+    border-bottom: 1px solid #dcdcdc;
+}
+.department_details h4 img {
+    height: 24px;
+}
+.department_intro {
+    position: relative;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.department_intro p {
+    text-indent: 2em;
+    padding:10px;
+    line-height: 24px;
+    height: 90px;
+    overflow: hidden;
+}
+.more {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #eaeaea;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    position: absolute;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+/*
+ * 医院动态_News_lsit_@Start
+ */
+.doctor_list {
+    border-bottom: 1px solid #f6f6f6;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+.doctor_list a {
+    display: block;
+    height: 80px;
+    padding:10px 10px 10px 92px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+    position: relative;
+}
+.doctor_list a em {
+    display: block;
+    width: 72px;
+    height: 80px;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.doctor_list a em img {
+    width: 100%;
+    height: 80px;
+}
+.doctor_list a h6 {
+    height:22px;
+    line-height: 22px;
+    padding: 5px 0;
+    overflow: hidden;
+    font-size: 1em;
+}
+.doctor_list a h6 i {
+    float: left;
+    color: red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 22px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+.doctor_list a p {
+    height: 48px;
+    line-height: 24px;
+    font-size: 0.875em;
+    overflow: hidden;
+    color: #999;
+}
+
+
+/*
+ * 联系我们_Contact_@Start
+ */
+.contact {
+
+}
+.contact span {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.contact span img {
+    width: 100%;
+}
+.contact ul {
+    padding: 0 10px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.contact ul li {
+    padding: 20px 70px 20px 75px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.contact ul li:last-child {
+    padding-right:10px;
+    border-bottom: none;
+}
+.contact ul li label {
+    width:70px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+.contact ul li p {
+    float: left;
+    line-height: 24px;
+ }
+.contact ul li a {
+    display: block;
+    height: 24px;
+    padding: 5px 20px;
+    background: #8edb59;
+    border-radius: 5px;
+    position: absolute;
+    top:50%;
+    right: 0px;
+    margin-top: -17px;
+}
+.contact ul li a img {
+    height: 24px;
+}
+/*
+ * 预约挂号_Appointment_@Start
+ */
+.appointment {
+    overflow: hidden;
+}
+.appointment p {
+    padding: 10px 10px 10px 100px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.appointment p label {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top:10px;
+    left: 20px;
+}
+.appointment p a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+/*
+ * 按钮_Btn_@Start
+ */
+.btn {
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.btn a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #006db8;
+}
+/*
+ * 叫号查询_numSearch_@Start
+ */
+.numSearch {
+    background: #fff;
+    overflow: hidden;
+}
+.numSearch span {
+    display: block;
+    padding: 10px 100px 10px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    overflow: hidden;
+}
+.numSearch span h6 {
+    font-size: 1.2em;
+    height: 24px;
+    line-height: 24px;
+}
+.numSearch span p {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #afafaf;
+}
+.numSearch span em {
+    background: #8edb59;
+    border-radius: 5px;
+    display: block;
+    font-size: 1.4em;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 11px;
+    width: 70px;
+    z-index: 9;
+}
+
+/*
+ * 体检服务_medical_list_@Start
+ */
+.medical_list {
+    background: #f1f1f1;
+    overflow: hidden;
+}
+.medical_list a {
+    display: block;
+    padding:10px 15px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+}
+.medical_list a h4 {
+    line-height: 24px;
+    padding: 5px 0;
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.medical_list a h4 i {
+    float: left;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin-right: 10px;
+    color: #fff;
+    background: red;
+}
+.medical_list a p {
+    height: 24px;
+    line-height: 24px;
+    font-size: 0.875em;
+}
+
+
+/*
+ * 满意度调查_survey_@Start
+ */
+.survey_list {
+    background: #f1f1f1;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+}
+.survey_list a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding:5px 10px;
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #f6f6f6;
+}
+.survey_header {
+    overflow: hidden;
+}
+.survey_header h4 {
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #c2c2c2;
+    position:relative;
+}
+.survey_header span {
+    display: block;
+    line-height: 32px;
+}
+.survey_header p {
+    width: 100%;
+    text-indent: 2em;
+    line-height: 24px;
+    padding-bottom:10px;
+}
+.survey_cont {
+    padding:5px 0px 10px;
+    border-top: 1px solid #c2c2c2;
+}
+.survey_cont dt {
+    line-height: 32px;
+}
+.survey_cont dd {
+    overflow: hidden;
+}
+.survey_cont dd select {
+    width: 100%;
+}
+.survey_cont dd label {
+    min-width: 43%;
+    line-height: 20px;
+    padding: 10px;
+    float: left;
+    color: #666;
+}
+.survey_cont dd p {
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.survey_cont dd p input[type='text'] {
+    width: 100%;
+    height: 40px;
+    line-height: normal;
+    border: none;
+}
+.survey_cont dd p textarea {
+    width: 100%;
+    min-height: 86px;
+    border: none;
+    text-align: left;
+    padding: 5px 0;
+    font-weight: normal;
+}
+
+/*
+ * 排班预约_doctor_intro_@Start
+ */
+.doctor_intro {
+    overflow: hidden;
+}
+/*
+ * 排班信息表_Schedule_@Start
+ */
+.tableWrap {
+    overflow: auto;
+}
+.tablesWrap {
+    overflow: hidden;
+}
+.tablesWrap_title {
+    height: 40px;
+    line-height: 40px;
+    background: #e2e2e2;
+    position: relative;
+}
+.arrow {
+    display: block;
+    width:16px;
+    height: 36px;
+    overflow: hidden;
+    position: absolute;
+    top:1px;
+    z-index:99;
+}
+.left_arrow {
+    left: 10px;
+}
+.arrow span {
+    display: block;
+    border:2px solid #666;
+    height:60px;
+    width:60px;
+    position:absolute;
+    top: -12px;
+}
+.left_arrow span {
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    left: 15px;
+}
+.right_arrow {
+    right: 10px;
+}
+
+.right_arrow span {
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    right: 15px;
+}
+.tablesWrap_title h4 {
+    text-align: center;
+}
+.schedule {
+    text-align: center;
+    background: #fff;
+}
+.schedule caption {
+    height: 40px;
+    line-height: 40px;
+    background: #e2e2e2;
+}
+.schedule thead tr td,.schedule tbody tr td {
+    width: 130px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+}
+.schedule thead tr td {
+    background: #f1f1f1 ;
+}
+.schedule tbody tr td i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background: #aeaeae;
+    border: 2px solid #aeaeae;
+
+}
+.schedule tbody tr td a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background: #8edb59;
+    border: 2px solid #8edb59;
+}
+.schedule tbody tr td a.curr {
+    border: 2px solid red;
+}
+
+.doctor_cont {
+    overflow: hidden;
+}
+.doctor_cont h4 {
+    line-height: 24px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #6f78b2;
+    border-bottom: 1px solid #dcdcdc;
+    background: #fff;
+}
+.doctor_cont h4 img {
+    height: 24px;
+}
+.doctor_cont p {
+    text-indent: 2em;
+    padding: 10px;
+}
+/*
+ * 添加就诊人_addPatient_@Start
+ */
+.addPatient {
+    overflow: hidden;
+    display: none;
+}
+.selectPatient {
+    display: block;
+    padding: 10px 10px 10px 70px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.selectPatient label {
+    display: block;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.selectPatient a {
+    display: block;
+}
+.instruction {
+    overflow: hidden;
+}
+.instruction h4 {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: red;
+}
+.instruction p {
+    line-height: 24px;
+    padding:5px 10px 5px 30px;
+    overflow: hidden;
+    position: relative;
+}
+.instruction p em {
+    display: block;
+    width: 20px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    top:5px;
+    left:10px;
+}
+
+
+.layout {
+    padding: 10px;
+    background:url("../images/banner/bg_caption.png");
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: auto;
+    display: none;
+}
+.dialog {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.dialog ul {
+    display: table-row;
+}
+.dialog ul li {
+    display: table-cell;
+    vertical-align: middle;
+}
+.patient_list {
+    overflow: auto;
+    position: relative;
+}
+.patient_list span {
+    display: block;
+    background: #fff;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.patient_list span p {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding:0 10px;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+}
+.patient_list span a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding:0 10px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.patient_list span p i {
+    display: block;
+    width: 5px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top:0px;
+    left:0px;
+    bottom: 0px;
+}
+.patient_list span p.curr i {
+    background: #ff6100;
+}
+.patient_list a.cancel {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f5f5f5;
+    position:absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+/*
+ * 确认预约挂号信息弹出层
+ */
+.confirm_info {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.confirm_info dt {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.confirm_info dd {
+    overflow: hidden;
+}
+.confirm_info dd p {
+    height: 40px;
+    line-height: 40px;
+    padding-left:80px;
+    white-space: normal;
+    font-size: 0.875em;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.confirm_info dd p label {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top:0px;
+    left:10px;
+    z-index:999;
+}
+.btn_select {
+    padding:10px;
+    text-align: center;
+    overflow: hidden;
+}
+.btn_select a {
+    display: inline-block;
+    width: 47%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #a3a2a2;
+    margin: 0 1%;
+}
+.btn_select a.ok {
+    background: #006db8;
+}
+.prompt {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    left: 10%;
+    right: 10%;
+    display: none;
+}
+.prompt span {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    background:url("../images/banner/bg_caption.png");
+    border-radius: 5px;
+}
+.success {
+    padding:30px;
+    text-align: center;
+}
+.success img {
+    width: 150px;
+}
+.success p a {
+    color: #176ba1;
+    text-decoration: underline;
+}
+

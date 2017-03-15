@@ -1,0 +1,9 @@
+<div class="news_list">
+    <a ng-repeat="stopClinical in stopClinicalService" href="#/stopClinical/{{stopClinical.id}}"  ng-show="stopClinicalService.length">
+        <em>
+            <img ng-src="{{stopClinical.imgUrl}}"/>
+        </em>
+        <h6 ng-bind="stopClinical.title"></h6>
+        <p ng-bind="stopClinical.date"></p>
+    </a>
+</div>

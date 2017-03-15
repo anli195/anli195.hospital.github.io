@@ -1,0 +1,8 @@
+<div class="features">
+    <a ng-repeat="list in featuresService" href="#/features/{{list.id}}">
+        <em>
+            <img ng-src="{{list.imgUrl}}"/>
+        </em>
+        <h6 ng-bind="list.title"></h6>
+    </a>
+</div>

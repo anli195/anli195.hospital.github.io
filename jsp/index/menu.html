@@ -1,0 +1,42 @@
+<div class="menu" ng-controller="menuController" ng-show="menuService.length">
+    <ul>
+        <li ng-repeat="menu in menuService" ng-if="$index < 4">
+            <a href="{{menu.url}}">
+                    <span>
+                        <img ng-src="{{menu.imgUrl}}">
+                    </span>
+                <h4 ng-bind="menu.title"></h4>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="menu in menuService" ng-if="$index > 3 && $index < 8">
+            <a ng-href="{{menu.url}}">
+                    <span>
+                        <img ng-src="{{menu.imgUrl}}">
+                    </span>
+                <h4 ng-bind="menu.title"></h4>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="menu in menuService" ng-if="$index > 7 && $index < 12">
+            <a ng-href="{{menu.url}}">
+                    <span>
+                        <img ng-src="{{menu.imgUrl}}">
+                    </span>
+                <h4 ng-bind="menu.title"></h4>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="menu in menuService" ng-if="$index > 11 && $index < 16">
+            <a ng-href="{{menu.url}}">
+                    <span>
+                        <img ng-src="{{menu.imgUrl}}">
+                    </span>
+                <h4 ng-bind="menu.title"></h4>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+ * @description : css reset
+ * @author   : anli(安立)
+ * @date     : 2017-02-08
+ * PC端基础样式
+ */
+.jqformHidden {
+    display: none;
+}
+.RadioWrapper {
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+}
+.formRadio {
+    display: block;
+    width:20px;
+    height: 20px;
+    background:url("../images/icon/jqform.png") -1px -1px no-repeat;
+}
+.formRadioCheck {
+    background-position: -1px -22px;
+}
+.checkboxWrapper {
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+}
+.formCheckbox {
+    display: block;
+    width:20px;
+    height: 20px;
+    background:url("../images/icon/jqform.png") -22px -1px no-repeat;
+}
+.formCheckboxCheck {
+    background-position: -22px -22px;
+}
+
+

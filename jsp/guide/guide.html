@@ -1,0 +1,8 @@
+<div class="features">
+    <a ng-repeat="guide in guideService" href="#/guide/{{guide.id}}">
+        <em>
+            <img ng-src="{{guide.imgUrl}}"/>
+        </em>
+        <h6 ng-bind="guide.title"></h6>
+    </a>
+</div>

@@ -1,0 +1,8 @@
+<div class="features" ng-show="equipmentService.length">
+    <a ng-repeat="equipment in equipmentService" href="#/equipment/{{equipment.id}}">
+        <em>
+            <img ng-src="{{equipment.imgUrl}}"/>
+        </em>
+        <h6 ng-bind="equipment.title"></h6>
+    </a>
+</div>

@@ -1,0 +1,9 @@
+<div class="news_list">
+    <a ng-repeat="new in newsService" href="#/news/{{new.id}}"  ng-show="newsService.length">
+        <em>
+            <img ng-src="{{new.imgUrl}}"/>
+        </em>
+        <h6 ng-bind="new.title"></h6>
+        <p ng-bind="new.date"></p>
+    </a>
+</div>

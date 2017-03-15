@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="search" ng-controller="departmentController">
+        <span class="search_text">
+            <i><img src="../skin/default/images/icon/icon_search.png"/> </i>
+            <input type="text" maxlength="20" placeholder="快速搜索科室" >
+            <a href="javascript:void(0);" class="clear_cont" ng-click="clearSearchText()">X</a>
+        </span>
+        <div class="search_list" style="display: block">
+            <p>
+                <a ng-repeat="dep in departmentService" href="#/numSearch/{{dep.id}}">{{dep.title}}</a>
+            </p>
+        </div>
+    </div>
+</div>

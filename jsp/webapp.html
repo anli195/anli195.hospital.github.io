@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <!-- 标题图标 icon -->
+    <link rel="icon" href="../skin/default/images/hospital.ico" type="image/x-icon">	
+    <!-- 全局样式 Globle -->
+    <link href="../skin/Globle.css" rel="stylesheet" type="text/css" />
+    <!-- 首页样式 index -->
+    <link href="../skin/default/CSS/index.css" rel="stylesheet" type="text/css" />
+    <!-- 焦点图 Banner -->
+    <link href="../skin/default/CSS/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="../skin/default/CSS/owl.theme.css" rel="stylesheet" type="text/css" />
+    <!-- form表单样式 jqform -->
+    <link href="../skin/default/CSS/jqform.css" rel="stylesheet" type="text/css" />
+    <link href="../skin/default/CSS/iscroll.css" rel="stylesheet" type="text/css" />
+    <link href="../skin/default/CSS/nav.css" rel="stylesheet" type="text/css">
+    <title>行医指南</title>
+</head>
+<body ng-app="appModule">
+	
+	<nav>
+       <h1>
+           <a href="#/index">
+           	   <em></em>
+           	   <i>行医指南</i>
+           </a>
+       </h1>
+       <span>
+           <a href="#/intro" class="icon_intro">医院简介</a>
+           <a href="#/news" class="icon_news">医院动态</a>
+           <a href="#/department" class="icon_department">科室医生</a>
+           <a href="#/features" class="icon_features">特色技术</a>
+           <a href="#/equipment" class="icon_equipment">医疗设备</a>
+           <a href="#/floor" class="icon_floor">楼层分布</a>
+           <a href="#/contact" class="icon_contact">联系医院</a>
+           <a href="#/guide" class="icon_guide">就医指南</a>
+           <a href="#/appointment" class="icon_appointment">预约挂号</a>
+           <a href="#/numSearch" class="icon_numSearch">叫号查询</a>
+           <a href="#/stopClinical" class="icon_stopClinical">停诊通知</a>
+           <a href="#/medical" class="icon_medical">体检服务</a>
+           <a href="#/survey" class="icon_survey">满意度调查</a>
+           <a href="#/navigation" class="icon_navigation">来院导航</a>
+           <a href="#/complaints" class="icon_complaints">投诉建议</a>
+           <a href="#/personal" class="icon_personal">个人中心</a>
+       </span>
+       <p>
+           <a href="#/index" id="logout">退出登录</a>
+       </p>
+    </nav>
+    <div id="wholeBox" class="whole_main">
+    	<header>
+		    <a href="javascript:void(0)" class="icon_menu" id="home"></a>
+		    <em>医院新闻</em>
+		</header>
+		<div class="head_replace"></div>
+	    <div ng-view></div>
+    </div>
+    
+    <script type="text/javascript" src="../jQuery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../jQuery/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../jQuery/jqfrom.js"></script>
+    <script type="text/javascript" src="../jQuery/iscroll.js"></script>
+    <script type="text/javascript" src="../jQuery/nav.js"></script>
+    <script type="text/javascript" src="../angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="../angularjs/angular-resource.min.js"></script>
+    <script type="text/javascript" src="../angularjs/angular-route.min.js"></script>
+    <script type="text/javascript" src="../angularjs/angular-animate.min.js"></script>
+    <script type="text/javascript" src="../jQuery/jquery.touchSwipe.js" ></script>
+    <script type="text/javascript" src="../angularjs/webapp.js"></script>
+    <script type="text/javascript" src="../angularjs/servive.js"></script>
+    <script type="text/javascript" src="../angularjs/index/index.js"></script>
+    <script type="text/javascript" src="../angularjs/personal/personal.js"></script>
+    <script type="text/javascript" src="../angularjs/news/news.js"></script>
+    <script type="text/javascript" src="../angularjs/department/department.js"></script>
+    <script type="text/javascript" src="../angularjs/features/features.js"></script>
+    <script type="text/javascript" src="../angularjs/equipment/equipment.js"></script>
+    <script type="text/javascript" src="../angularjs/guide/guide.js"></script>
+    <script type="text/javascript" src="../angularjs/stopClinical/stopClinical.js"></script>
+    <script type="text/javascript" src="../angularjs/medical/medical.js"></script>
+    <script type="text/javascript" src="../angularjs/survey/survey.js"></script>
+	<script type="text/javascript" src="../jQuery/touch.js" ></script>
+</body>
+</html>

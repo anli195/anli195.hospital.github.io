@@ -1,0 +1,19 @@
+<div class="head_title">
+    <a href="javascript:void(0)" class="history_back" id="historyBack"></a>
+    <em>科室医生</em>
+</div>
+<div class="department_details">
+    <h4><img src="../skin/default/images/icon/icon_intro.png"/> 科室介绍</h4>
+    <div class="department_intro">
+        <p>内科是临床医学的一个专科，几乎是所有其他临床医学的基础，亦有医学之母之称。 内科学的内容包含了疾病的定义、病因、致病机转、流行病学、自然史、症状、征候内科是临床医学的一个专科，几乎是所有其他临床医学的基础，亦有医学之母之称。 内科学的内容包含了疾病的定义、病因、致病机转、流行病学、自然史、症状、征候内科是临床医学的一个专科，几乎是所有其他临床医学的基础，亦有医学之母之称。 内科学的内容包含了疾病的定义、病因、致病机转、流行病学、自然史、症状、征候</p>
+        <a href="javascript:void(0)" class="more">查看更多</a>
+    </div>
+    <h4><img src="../skin/default/images/icon/icon_per.png"/> 科室医生</h4>
+    <div class="doctor_list">
+        <a ng-repeat="doctor in doctors" href="#/doctorIntro/{{doctor.id}}">
+            <em><img src="../skin/default/images/banner/pic01.jpg"/></em>
+            <h6><i ng-bind="doctor.type"></i>{{doctor.name}}</h6>
+            <p ng-bind="doctor.cont"></p>
+        </a>
+    </div>
+</div>

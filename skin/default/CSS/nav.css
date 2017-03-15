@@ -1,0 +1,254 @@
+/*
+ * @description : css reset
+ * @author   : anli(安立)
+ * @date     : 2017-02-08
+ * PC端基础样式
+ */
+body {
+	background: url(../images/body_bg.png) no-repeat 0 0;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header {
+	min-width: 320px;
+	max-width: 720px;
+	margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    background: #0099e5;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+header.head_slide {
+	top: 3%;
+    left: 250px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.head_replace {
+	min-width: 320px;
+	max-width: 720px;
+	margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    background: #0099e5;
+    overflow: hidden;
+}
+header a {
+	width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #0099e5;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+.icon_menu {
+	left: 0;
+    background: url(../images/icon/icon_header.png) no-repeat 12px 12px;
+    background-size: 400px auto;
+}
+header em {
+	line-height: 50px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+}
+nav {
+	width: 250px;
+    height: 100%;
+    min-height: 480px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    z-index: 99999;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.navSlide {
+	left: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+nav h1 {
+	height: 100px;
+    text-align: center;
+    color: #fff;
+}
+nav h1 a {
+	display: block;
+	overflow: hidden;
+}
+nav h1 em {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 20px;
+	background: url(../images/hospital.png) no-repeat;
+	background-size: contain;
+}
+nav h1 i {
+	float: left;
+	line-height: 100px;
+	color: #fff;
+}
+nav span {
+	display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 60px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+nav span a {
+	display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 60px;
+    color: #fff;
+}
+nav p {
+	padding: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+nav p a {
+	float: left;
+    width: 85%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    opacity: 0.8;
+    margin-left: 20px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+.icon_intro {
+	background: url(../images/menu/yyjj.png) no-repeat 25px 8px/24px auto;
+}
+.icon_news {
+	background: url(../images/menu/yydt.png) no-repeat 25px 8px/24px auto;
+}
+.icon_department {
+	background: url(../images/menu/ksys.png) no-repeat 25px 8px/24px auto;
+}
+.icon_features {
+	background: url(../images/menu/tsjs.png) no-repeat 25px 8px/24px auto;
+}
+.icon_equipment {
+	background: url(../images/menu/ylsb.png) no-repeat 25px 8px/24px auto;
+}
+.icon_floor {
+	background: url(../images/menu/lcfb.png) no-repeat 25px 8px/24px auto;
+}
+.icon_contact {
+	background: url(../images/menu/lxyy.png) no-repeat 25px 8px/24px auto;
+}
+.icon_guide {
+	background: url(../images/menu/jyzn.png) no-repeat 25px 8px/24px auto;
+}
+.icon_appointment {
+	background: url(../images/menu/yygh.png) no-repeat 25px 8px/24px auto;
+}
+.icon_numSearch {
+	background: url(../images/menu/jhcx.png) no-repeat 25px 8px/24px auto;
+}
+.icon_stopClinical {
+	background: url(../images/menu/tztz.png) no-repeat 25px 8px/24px auto;
+}
+.icon_medical {
+	background: url(../images/menu/tjfw.png) no-repeat 25px 8px/24px auto;
+}
+.icon_survey {
+	background: url(../images/menu/myddc.png) no-repeat 25px 8px/24px auto;
+}
+.icon_navigation {
+	background: url(../images/menu/lydh.png) no-repeat 25px 8px/24px auto;
+}
+.icon_complaints {
+	background: url(../images/menu/tsjy.png) no-repeat 25px 8px/24px auto;
+}
+.icon_personal {
+	background: url(../images/menu/grzx.png) no-repeat 25px 8px/24px auto;
+}
+.whole_main {
+	width: 100%;
+	background: #f3f3f3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.whole_box {
+	width: 100%;
+	height: 94%;
+	top: 3%;
+	left: 250px;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+.head_title {
+	min-width: 320px;
+	max-width: 720px;
+	margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    background: #0099e5;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.head_title a {
+	width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #0099e5;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+.history_back {
+	left: 0;
+    background: url(../images/icon/icon_header.png) no-repeat -163px -23px;
+    background-size: 400px auto;
+}
+.head_title em {
+	line-height: 50px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+}

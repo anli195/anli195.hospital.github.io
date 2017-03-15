@@ -1,0 +1,8 @@
+<div class="banner" ng-controller="bannerController" ng-show="bannerService.length">
+    <div id="owl-demo" class="owl-carousel">
+        <a ng-repeat="banner in bannerService" href="#/banner/{{banner.id}}" class="item"  >
+            <img class="lazyOwl" data-src="{{banner.imgUrl}}">
+            <h4 ng-bind="banner.title"></h4>
+        </a>
+    </div>
+</div>

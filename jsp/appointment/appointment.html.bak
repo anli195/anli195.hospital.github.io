@@ -1,0 +1,36 @@
+<div class="main">
+    <div class="search" ng-controller="departmentController">
+        <span class="search_text">
+            <i><img src="../../skin/default/images/icon/icon_search.png"/> </i>
+            <input type="text" maxlength="20" placeholder="快速搜索科室或医生" ng-model="searchText" ng-change="showSearchText()">
+            <a href="javascript:void(0);" class="search_btn">搜索</a>
+        </span>
+        <div class="search_list">
+            <p>
+                <a href="javascript:void(0)" ng-repeat="dep in departmentService | filter:searchText">{{dep.title}}</a>
+            </p>
+        </div>
+
+        <div class="department" tabs="tabs">
+            <div class="department_title">
+                <ul>
+                    <li class="curr">临床科室</li>
+                    <li>医技科室</li>
+                    <li>不一定</li>
+                </ul>
+            </div>
+            <div class="department_cont">
+                <p>
+                    <a href="#/department/{{dep.id}}" ng-repeat="dep in departmentService">{{dep.title}}</a>
+                </p>
+                <p>
+                    <a href="javascript:void(0)" ng-repeat="dep in departmentService">111111</a>
+                </p>
+                <p>
+                    <a href="javascript:void(0)" ng-repeat="dep in departmentService">22222222</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
